@@ -8,9 +8,9 @@ import { HeroService } from './hero.service';
   selector: 'my-dashboard',
   templateUrl: 'app/dashboard.component.html',
 })
-export class DashboardComponent  implements OnInit{ 
+export class DashboardComponent implements OnInit { 
     heroes: Hero[] = [];
-    cconstructor(
+    constructor(
         private router: Router,
         private heroService: HeroService) {
     }
